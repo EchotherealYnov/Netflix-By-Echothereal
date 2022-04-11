@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
 import requests from "../../Netflix-By-Echothereal/lib/requests";
 import axios from "../../Netflix-By-Echothereal/lib/axios";
+import { useRouter } from "next/router";
 
 function Banner() {
     const [movie, setMovie] = useState([]);
+    const router = useRouter();
 
     useEffect(() => {
         async function fetchData() {
@@ -34,7 +36,7 @@ function Banner() {
                 </h1>
                 <div>
                     <button className='btn'>Play</button>
-                    <button className='btn'>My List</button>
+                    <button onClick={() => router.push("/Wishlist")} className='btn'>My List</button>
                 </div>
                 <h1 className='font-semibold text-sm pt-4 max-h-[360px] h-10 line-clamp-4'>
                     {movie?.overview}
