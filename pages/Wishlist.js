@@ -50,7 +50,7 @@ const Index = () => {
     <div className="page__cart">
       {cart ? (
         <>
-          <p>Vous avez {renderTotalQty()} films dans votre wishlist</p>
+          <p>Vous êtes inscrits à {renderTotalQty()} évènements</p>
           <table>
             <thead>
               <tr>
@@ -80,7 +80,7 @@ const Index = () => {
             </tbody>
           </table>
           <Button
-            title="Supprimer le panier"
+            title="Supprimer vos évènements"
             classes="btn btn__color-white"
             type="button"
             function={deleteCart}
@@ -88,7 +88,7 @@ const Index = () => {
           {renderTotalAmount()}
         </>
       ) : (
-        <p className="text__center">Votre wishlist est vide</p>
+        <p className="text__center">Votre liste d'évènements à venir est vide</p>
       )}
     </div>
   );

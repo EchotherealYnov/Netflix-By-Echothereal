@@ -26,7 +26,7 @@ function Header() {
     >
       <div className="flex justify-between">
         <img
-          src="https://www.freepnglogos.com/uploads/netflix-logo-drawing-png-19.png"
+          src="https://cdn.discordapp.com/attachments/975668516814479431/975697646029250630/logo_g29.png"
           alt=""
           onClick={() => router.push("/")}
           className="fixed top-4 pl-[20px] w-[80px] object-contain cursor-pointer"

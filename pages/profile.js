@@ -16,7 +16,7 @@ const profile = () => {
   return (
     <div className="h-screen bg-black text-white">
       <Head>
-        <title>Netflix - Profile</title>
+        <title>Meet 29 -Votre Profile</title>
         <link
           rel="icon"
           href="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg"
@@ -39,7 +39,7 @@ const profile = () => {
               <div>
                 <button
                   onClick={() => loggedIn=false}
-                  className="px-3 py-4 text-base w-full mt-[5%] border-none cursor-pointer bg-[#e50914]"
+                  className="px-3 py-4 text-base w-full mt-[5%] border-none cursor-pointer bg-[#282c2d] hover:scale-110 duration-200 transition transform ease-out cursor-pointer hover:z-20"
                 >
                   Se déconnecter
                 </button>
@@ -56,13 +56,13 @@ const profile = () => {
           </h1>
           <button
             onClick={() => router.push("/")}
-            className="px-3 py-4 text-base w-full mt-[5%] border-none cursor-pointer bg-[#e50914]"
+            className="px-3 py-4 text-base w-full mt-[5%] border-none cursor-pointer bg-[#2e8b57] hover:scale-110 duration-200 transition transform ease-out cursor-pointer hover:z-20"
           >
-            Retourner à la page de connexion
+            Se déconnecter
           </button>
           <button
             onClick={() => router.push("/Home")}
-            className="px-3 py-4 text-base w-full mt-[5%] border-none cursor-pointer bg-[#e50914]"
+            className="px-3 py-4 text-base w-full mt-[5%] border-none cursor-pointer bg-[#2e8b57] hover:scale-110 duration-200 transition transform ease-out cursor-pointer hover:z-20"
           >
             Retourner à l'accueil
           </button>

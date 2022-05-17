@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import requests from "../../Netflix-By-Echothereal/lib/requests";
-import axios from "../../Netflix-By-Echothereal/lib/axios";
+import requests from "../lib/requests";
+import axios from "../lib/axios";
 import { useRouter } from "next/router";
 
 function Banner() {
@@ -26,21 +26,21 @@ function Banner() {
             className="h-[448px] relative z-0 object-contain text-white"
             style={{
                 backgroundSize: "cover",
-                backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+                backgroundImage: `url("https://www.saint-germain-laval.fr/wp-content/uploads/ev%C3%A8nements-e1360520785964.jpg")`,
                 backgroundPosition: "center center"
             }}
         >
             <div className='ml-[30px] pt-[140px] h-[190px]'>
-                <h1 className='text-5xl font-bold pb-5'>
-                    {movie?.title || movie?.name || movie?.orignal_name}
-                </h1>
+                {/* <h1 className='text-5xl font-bold pb-5'> */}
+                    {/* {movie?.title || movie?.name || movie?.orignal_name} */}
+                {/* </h1> */}
                 <div>
-                    <button className='btn'>Play</button>
-                    <button onClick={() => router.push("/Wishlist")} className='btn'>My List</button>
+                    {/* <button className='btn'>Play</button> */}
+                    <button onClick={() => router.push("/Wishlist")} className='btn'>Mes Évenements</button>
                 </div>
-                <h1 className='font-semibold text-sm pt-4 max-h-[360px] h-10 line-clamp-4'>
-                    {movie?.overview}
-                </h1>
+                {/* <h1 className='font-semibold text-sm pt-4 max-h-[360px] h-10 line-clamp-4'> */}
+                    {/* {movie?.overview} */}
+                {/* </h1> */}
             </div>
             <div className="bg-gradient-to-b from-transparent to-black h-[17.4rem]" />
         </header>

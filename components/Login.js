@@ -11,23 +11,23 @@ const Login = () => {
       className="relative h-full"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url("https://assets.nflxext.com/ffe/siteui/vlv3/6dea7743-5586-45d1-89a2-9569b1bb0340/b8bbb6c3-80f1-4648-8527-521bd3bd8781/IN-en-20220207-popsignuptwoweeks-perspective_alpha_website_small.jpg")`,
+        backgroundImage: `url("https://www.doyourevent.fr/images/2020/08/26/modeles-d-organisation-doyourevent.jpg")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
       }}
     >
       <Head>
-        <title>Netflix - Login</title>
+        <title>Meet29 - Login</title>
       </Head>
       <div>
         <img
-          src="https://www.freepnglogos.com/uploads/netflix-logo-drawing-png-19.png"
+          src="https://cdn.discordapp.com/attachments/975668516814479431/975697646029250630/logo_g29.png"
           alt=""
           className="fixed left-0 w-[180px] object-contain pl-5 pt-5"
         />
 
         <button
-          className="fixed right-[20px] top-[20px] py-[5px] px-[20px] text-base text-white bg-[#e50914]"
+          className="fixed right-[20px] top-[20px] py-[5px] px-[20px] text-base text-white bg-[#2e8b57] hover:scale-110 duration-200 transition transform ease-out cursor-pointer hover:z-20"
           onClick={() => setSignIn(true)}
         >
           S'identifier
@@ -41,21 +41,20 @@ const Login = () => {
           }}
         />
 
-        <div className="absolute top-[30%] mx-auto w-full text-center z-10 text-white p-5">
+        <div className="absolute top-[12%] mx-auto w-full text-center z-10 text-white p-5">
           {signIn ? (
             <SignIn />
           ) : (
             <>
               <h1 className="text-7xl mb-5 ">
-              Films, séries TV et bien <br></br>
-              plus en illimité.
+             Votre platforme <br></br>
+              de team building
               </h1>
               <h2 className="text-3xl font-normal mb-[30px]">
-              Où que vous soyez. Annulez à tout moment.
+              Où que vous soyez. Rejoignez des events.
               </h2>
               <h3 className="text-xl mb-5">
-              Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre <br></br>
-              abonnement.
+              Tous l'actu sur les sports
               </h3>
 
               <div className="h-[30px]">
@@ -63,10 +62,33 @@ const Login = () => {
                   <input
                     type="email"
                     placeholder="Adresse e-mail"
-                    className="p-4 outline-none max-w-[600px] w-[40%] text-black"
+                    className="p-4 outline-black max-w-[600px] w-[40%] rounded-full text-black"
                   />
+                  <br/><br/>
+                  
+                  <input
+                    type="name"
+                    placeholder="Nom"
+                    className="p-4 outline-black max-w-[600px] w-[40%] rounded-full text-black"
+                  />
+                    <br/><br/>
+                 
+        
+                  <input
+                    type="first name"
+                    placeholder="Prénom"
+                    className="p-4 outline-black max-w-[600px] w-[40%] rounded-full text-black"
+                  />
+                   <br/><br/>
+                   
+                   <input
+                    type="password"
+                    placeholder="Mot de passe"
+                    className="p-4 outline-black max-w-[600px] w-[40%] rounded-full text-black"
+                  />
+                  <br/><br/>
                   <button
-                    className="px-4 py-4 text-base border-none bg-[#e50914]"
+                    className="px-20 py-8 text-base rounded-lg bg-[#2e8b57] hover:scale-110 duration-200 transition transform ease-out cursor-pointer hover:z-20"
                     onClick={() => setSignIn(true)}
                   >
                     COMMENCER

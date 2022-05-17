@@ -2,6 +2,7 @@
 import { Component, useState } from "react";
 import { React } from "react";
 import redirect from 'nextjs-redirect'
+import { useRouter } from 'next/router'
 
 
 class SignIn extends Component {
@@ -28,7 +29,7 @@ class SignIn extends Component {
   SubmitForm(e){
     e.preventDefault()
     const {username,password} = this.state
-    if (username =="echothereal" && password =="netflixclone"){
+    if (username =="test" && password =="test"){
       localStorage.setItem("token", "login")
       this.setState( {
         loggedIn: true
@@ -67,16 +68,20 @@ class SignIn extends Component {
            {/* On aurait pu mettre un input a la place du button :
             <input type="submit" className="px-4 py-3 border-none mt-5 text-base rounded-md bg-[#e50914]"/> */}
 
-           <button type="submit" className="px-4 py-3 border-none mt-5 text-base rounded-md bg-[#e50914]"
+           <button type="submit" className="px-4 py-3 border-none mt-5 text-base rounded-md bg-[#2e8b57] hover:scale-110 duration-200 transition transform ease-out cursor-pointer hover:z-20"
         >
           S'identifier
         </button>
 
             <h4 className="text-left mt-[30px]">
-          <span className="text-gray-500">Première visite sur Netflix? </span>
-          <span className="cursor-pointer hover:underline">
-            Inscrivez-vous.
-          </span>
+          <span className="text-gray-500"> Première visite sur Meet29 ? </span>
+          {/* <button type="text" onClick={() => router.push("/")}className="px-4 py-3 border-none mt-5 text-base rounded-md bg-[#2e8b57] hover:scale-110 duration-200 transition transform ease-out cursor-pointer hover:z-20" */}
+        {/* > */}
+          {/* Inscrivez-vous. */}
+        {/* </button> */}
+          
+          <a className="cursor-pointer hover:underline" onClick={() => router.push("/")}>Inscrivez-vous.</a>
+        
         </h4>
   
 
